@@ -8,9 +8,9 @@ public class HeroControl : MonoBehaviour
     private Rigidbody2D rigidBody;
     public float MoveForce = 100;
     public float JumpForce = 100;
-    private float fInput = 0.0f;
     public float MaxSpeed = 5;
-    private bool bFaceRight = true;
+    [HideInInspector]
+    public  bool bFaceRight = true;
     private bool bGrounded = false;
     Transform mGroundCheck;
     private bool bJump;
